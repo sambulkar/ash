@@ -1,0 +1,27 @@
+---
+- hosts: nginx-servers
+  remote_user: root
+
+  tasks:
+  - name: ensure echo is at the latest version
+    shell: echo "helloworld"
+
+  - name: install the latest version of Nginx
+    yum:
+      name: nginx
+      state: latest
+    become: yes
+
+  - name: Deploy  demo index.html website
+    copy: src=files/index.html dest=/usr/share/nginx/html/ mode=0644
+    become: yes
+
+  - name: Deploy changes to nginx.conf
+    copy: src=files/nginx.conf dest=/etc/nginx/ mode=0644
+    become: yes
+
+  - name: Ensure the Nginx service is running
+    service:
+      name: nginx
+      state: started
+    become: yes
