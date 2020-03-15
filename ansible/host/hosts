@@ -1,2 +1,2 @@
 [nginx-servers]
-18.138.22.220
+18.138.22.220 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/home/jenkins/.keys/demo.pem
