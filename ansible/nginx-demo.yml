@@ -1,5 +1,5 @@
 ---
-- hosts: [nginx-servers]
+- hosts: nginx-servers
   remote_user: root
 
   tasks:
