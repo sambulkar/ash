@@ -55,4 +55,4 @@ rm hosts
 Step 5:Demo 
 
 Step 6: Draw a diagram 
-
+![CI_CD PipelineWorkflow](https://user-images.githubusercontent.com/19179936/76700627-5b6aca00-66f4-11ea-8544-ee3dd9ee290d.png)
