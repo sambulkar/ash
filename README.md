@@ -5,4 +5,4 @@ pickup the change in config file.
 3. Based on the configuration, automation tool needs to check if ngnix is already running in
 AWS cloud or not.
 4. Use Existing AWS Vm :- Install nginx on the instance and then apply the new changes in
-ngnix config based on repo changes.
+ngnix config based on repo changes. 
